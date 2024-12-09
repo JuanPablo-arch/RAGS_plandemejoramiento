@@ -1,0 +1,26 @@
+
+
+
+Consultas para crear tabla minutas 
+CREATE TABLE minutas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fecha_hora DATETIME NOT NULL,
+    nombre_visitante VARCHAR(100) NOT NULL,
+    documento_identidad VARCHAR(20) NOT NULL,
+    motivo_ingreso VARCHAR(255) NOT NULL,
+    persona_autoriza VARCHAR(100) NOT NULL,
+    observaciones TEXT,
+    creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+UPDATE guardia de seguridad
+ALTER TABLE minutas ADD COLUMN nombre_guardia VARCHAR(100) NOT NULL AFTER persona_autoriza;
+
+UPDATE para tabla usuarios 
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_usuario VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    contrasena VARCHAR(255) NOT NULL,
+    creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

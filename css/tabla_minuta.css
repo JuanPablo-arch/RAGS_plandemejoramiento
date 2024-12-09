@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(45deg, #3498db, #2ecc71, #9b59b6);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ecf0f1;
+}
+
+.table th {
+    background-color: #2980b9;
+    color: white;
+    font-weight: bold;
+}
+
+.table td {
+    text-align: center;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #ddd;
+}
+
+.btn-primary, .btn-secondary, .btn-warning {
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.btn-primary {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-primary:hover {
+    background-color: #1f6ea0;
+    border-color: #1f6ea0;
+}
+
+.btn-secondary {
+    background-color: #7f8c8d;
+    border-color: #7f8c8d;
+}
+
+.btn-secondary:hover {
+    background-color: #6c7b8a;
+    border-color: #6c7b8a;
+}
+
+.btn-warning {
+    background-color: #f39c12;
+    border-color: #f39c12;
+}
+
+.btn-warning:hover {
+    background-color: #e67e22;
+    border-color: #e67e22;
+}
+
+.d-flex a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
