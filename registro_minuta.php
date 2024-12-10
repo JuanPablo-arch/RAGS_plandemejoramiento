@@ -40,7 +40,7 @@ if (!isset($_SESSION['usuario_id'])) {
                             </div>
                             <div class="mb-3">
                                 <label for="documento_identidad"  class="form-label">Documento de Identidad</label>
-                                <input type="text" class="form-control" id="documento_identidad" name="documento_identidad" required>
+                                <input type="text" class="form-control" id="documento_identidad" name="documento_identidad" maxlength="10" required>
                             </div>
                             <div class="mb-3">
                                 <label for="motivo_ingreso" class="form-label">Motivo de Ingreso</label>
