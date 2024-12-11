@@ -1,3 +1,4 @@
+<!-- verifica autenticacion de usuario, de ser asi envia formulario y almacena datos y redirige a tabla_minutas, de no ser asi notificara error  -->
 <?php
 require 'conexion.php';
 session_start();

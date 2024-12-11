@@ -1,3 +1,4 @@
+<!-- verificacion de logueo de usuario exitoso y etiqueta cerrar sesion -->
 <?php
 session_start();
 

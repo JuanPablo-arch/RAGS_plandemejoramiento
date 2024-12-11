@@ -1,3 +1,4 @@
+<!-- verifica autenticacion, de ser asi obtiene y almacena en usuarios.php la lista de usuarios  -->
 <?php
 require 'conexion.php';
 session_start();

@@ -3,6 +3,7 @@ require 'conexion.php';
 session_start();
 
 $message = "";
+//El codigo obtiene los datos del formulario enviado por el metodo POST y encripta la contraseña con el algoritmo BCRYPT.
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nombre_usuario = $_POST['nombre_usuario'];
@@ -12,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $sql = "INSERT INTO usuarios (nombre_usuario, email, contrasena) VALUES (:nombre_usuario, :email, :contrasena)";
     $stmt = $pdo->prepare($sql);
 
+//El código registra un nuevo usuario en la base de datos, guarda su ID en la sesion, muestra un mensaje de exito con una redireccion al panel de control, y maneja errores si ocurren
     try {
         $stmt->execute([
             ':nombre_usuario' => $nombre_usuario,

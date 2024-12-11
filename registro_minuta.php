@@ -1,3 +1,4 @@
+<!-- verifica si esta logueado en el sistema sino lo redirige nuevamente a login hasta que coincida y se ejecute el script -->
 <?php
 session_start();
 

@@ -1,3 +1,4 @@
+<!-- verifica credenciales, si coincide ira a tabla_minutas sino, error -->
 <?php
 require 'conexion.php';
 session_start();

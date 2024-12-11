@@ -1,3 +1,4 @@
+<!-- Verifica si el usuario está autenticado; si no, lo redirige a login -->
 <?php
 require 'conexion.php';
 session_start();
