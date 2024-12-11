@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="mb-3">
                 <label for="contrasena" class="form-label">Contraseña</label>
-                <input type="password" id="contrasena" name="contrasena" class="form-control" required>
+                <input type="password" id="contrasena" name="contrasena" class="form-control" pattern="[A-Za-z0-9]+"  title="Solo se permiten letras y números" maxlength="10" required>
             </div>
             <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
             <div class="text-center mt-3">

@@ -37,11 +37,11 @@ if (!isset($_SESSION['usuario_id'])) {
                             </div>
                             <div class="mb-3">
                                 <label for="nombre_visitante" class="form-label">Nombre del Visitante</label>
-                                <input type="text" class="form-control" id="nombre_visitante" name="nombre_visitante" required>
+                                <input type="text" class="form-control" id="nombre_visitante" name="nombre_visitante" pattern="[A-Za-z ]+" title="Solo se permiten letras" maxlength="30" required>
                             </div>
                             <div class="mb-3">
                                 <label for="documento_identidad"  class="form-label">Documento de Identidad</label>
-                                <input type="text" class="form-control" id="documento_identidad" name="documento_identidad" maxlength="10" required>
+                                <input type="text" class="form-control" id="documento_identidad" name="documento_identidad" pattern="\d+" title="Solo se permiten números" minlength="10" maxlength="10" required>
                             </div>
                             <div class="mb-3">
                                 <label for="motivo_ingreso" class="form-label">Motivo de Ingreso</label>
@@ -49,11 +49,11 @@ if (!isset($_SESSION['usuario_id'])) {
                             </div>
                             <div class="mb-3">
                                 <label for="persona_autoriza" class="form-label">Persona que Autoriza</label>
-                                <input type="text" class="form-control" id="persona_autoriza" name="persona_autoriza" required>
+                                <input type="text" class="form-control" id="persona_autoriza" name="persona_autoriza" pattern="[A-Za-z ]+" title="Solo se permiten letras" maxlength="30"  required>
                             </div>
                             <div class="mb-3">
                                 <label for="nombre_guardia" class="form-label">Nombre del Guardia</label>
-                                <input type="text" class="form-control" id="nombre_guardia" name="nombre_guardia" required>
+                                <input type="text" class="form-control" id="nombre_guardia" name="nombre_guardia" pattern="[A-Za-z ]+" title="Solo se permiten letras" maxlength="30" required>
                             </div>
                             <div class="mb-3">
                                 <label for="observaciones" class="form-label">Observaciones</label>

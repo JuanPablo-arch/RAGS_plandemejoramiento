@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <form method="POST" class="mt-3">
             <div class="mb-3">
                 <label for="nombre_usuario" class="form-label">Nombre de Usuario</label>
-                <input type="text" id="nombre_usuario" name="nombre_usuario" class="form-control" required>
+                <input type="text" id="nombre_usuario" name="nombre_usuario" class="form-control" pattern="[A-Za-z0-9]+"  title="Solo se permiten letras y números" maxlength="14" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Correo Electrónico</label>
@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="mb-3">
                 <label for="contrasena" class="form-label">Contraseña</label>
-                <input type="password" id="contrasena" name="contrasena" class="form-control" required>
+                <input type="password" id="contrasena" name="contrasena" class="form-control" pattern="[A-Za-z0-9]+"  title="Solo se permiten letras y números" maxlength="10" required>
             </div>
             <button type="submit" class="btn btn-primary w-100">Registrar</button>
         </form>

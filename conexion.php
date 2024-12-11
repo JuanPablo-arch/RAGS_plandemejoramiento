@@ -1,5 +1,5 @@
 <?php
-$host = 'localhost:3307';
+$host = 'localhost';
 $dbname = 'registro_minutas';
 $username = 'root';
 $password = '';
